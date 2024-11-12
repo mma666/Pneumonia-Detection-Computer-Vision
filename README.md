@@ -3,6 +3,22 @@
 
 ![](./Images/samples_150dpi.png)
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Project Motivation](#project-motivation)
+- [Dataset](#dataset)
+- [Project Workflow](#project-workflow)
+- [Data Preprocessing](#data-preprocessing)
+- [Model Architecture](#model-architecture)
+- [Training and Evaluation](#training-and-evaluation)
+- [Results and Observations](#results-and-observations)
+- [Key Challenges](#key-challenges)
+- [Future Improvements](#future-improvements)
+- [Deployment](#deployment)
+- [References](#references)
+- [Repository Structure](#repository-structure)
+
 ## Project Overview
 
 This project uses custom and pretrained Convolutional Neural Network (CNN) models to classify chest X-ray images into two categories: normal and pneumonia. The goal is to build an accurate model to assist in the early diagnosis of pneumonia, leveraging image processing techniques and neural networks.
@@ -87,6 +103,11 @@ The images below display a sample that was classified as pneumonia by both the c
 ## Future Improvements
 
 With additional resources, further hyperparameter tuning could enhance model performance. Testing additional pretrained models would allow for performance comparisons on this dataset, and transfer learning with models pretrained specifically on medical imaging datasets, particularly X-ray images, could provide further benefits. For the custom CNN model, experimenting with deeper and more advanced architectures may improve accuracy. Additionally, training with higher-resolution images could yield better results. However, higher-resolution images also come with trade-offs in terms of increased computational requirements, longer training times, and greater memory usage.
+
+## Deployment
+
+The front end of the application is built using Gradio's `Interface`.
+The application is deployed in the Hugging Face Spaces and can be accessed [here](https://huggingface.co/spaces/mma666/Pneumonia_Detection).
 
 ## References
 
